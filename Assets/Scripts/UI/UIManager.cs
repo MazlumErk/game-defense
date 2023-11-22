@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
+
 
 public class UIManager : MonoBehaviour
 {
-    // Silah modu
-    [SerializeField] private bool RifleMode;
-    [SerializeField] private int ammo;
-
-    // UI
-    [SerializeField] private TextMeshProUGUI ammoText, rifleModeText;
-    public void UiUpdate()
+    private void Start()
     {
-        // rifleModeText.text = RifleMode == true ? "-" : "---";
-        // ammoText.text = "Mermi: " + ammo.ToString();
+        GameUIController.Instance.UiUpdate();
+    }
+    private void Update()
+    {
+        if (Input.anyKey)
+        {
+            GameUIController.Instance.UiUpdate();
+        }
     }
 }

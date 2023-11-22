@@ -57,10 +57,10 @@ public class RifleShotController : MonoBehaviour
                     }
                     rifleShoutSound.Play();
                     rifleParticle.Play();
+                    SetRifleData(GetRifle().data.ammo - 1);
                 }
                 currentRate = 0;
-                Debug.Log($"current: {GetRifle().data.ammo}, later: {GetRifle().data.ammo - 1}");
-                SetRifleData(GetRifle().data.ammo - 1);
+                // Debug.Log($"current: {GetRifle().data.ammo}, later: {GetRifle().data.ammo - 1}");
             }
 
         }

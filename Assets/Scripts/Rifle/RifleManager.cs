@@ -6,8 +6,6 @@ public class RifleManager : MonoBehaviour
 {
     public static RifleManager Instance;
     public Rifle rifle;
-    
-
 
     public void Awake()
     {

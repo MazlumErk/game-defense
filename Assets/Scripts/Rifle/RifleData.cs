@@ -5,10 +5,6 @@ public struct Rifle
 {
     public RifleType type;
     public RifleData data;
-    public void SetRifleData(RifleData Data)
-    {
-        data = Data;
-    }
 }
 
 [Serializable]

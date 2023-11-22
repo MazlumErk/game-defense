@@ -7,15 +7,15 @@ public class ZombieNavMesh : MonoBehaviour
 {
     [SerializeField] private NavMeshAgent zombie;
     // [SerializeField] private Transform player;
-    [SerializeField] private Vector3 cameraPosition;
+    [SerializeField] private Vector3 playerPosition;
     
     void Start()
     {
-        cameraPosition = Camera.main.transform.position;
+        playerPosition = Camera.main.transform.position;
     }
 
     void Update()
     {
-        zombie.SetDestination(cameraPosition);
+        zombie.SetDestination(playerPosition);
     }
 }

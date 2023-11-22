@@ -168,13 +168,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kup: {fileID: 5446261586096150866, guid: ddb1d05890e3a43c79e8b0d78915c278, type: 3}
   rifleShoutSound: {fileID: 545869837452240104}
-  RifleMode: 1
-  fireRate: 1
   currentRate: 0
   rifleParticle: {fileID: 966159830801615898}
-  ammoText: {fileID: 0}
-  rifleModeText: {fileID: 0}
-  ammo: 0
 --- !u!1 &7524005486131108980
 GameObject:
   m_ObjectHideFlags: 0
@@ -5206,15 +5201,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 9a21925963ad72641b17d3da3e0c173f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.9192
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 9a21925963ad72641b17d3da3e0c173f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.9192
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 9a21925963ad72641b17d3da3e0c173f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.9192
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 9a21925963ad72641b17d3da3e0c173f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5222,11 +5217,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 9a21925963ad72641b17d3da3e0c173f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.559
+      value: -0.412
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 9a21925963ad72641b17d3da3e0c173f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.095
+      value: 1.089
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 9a21925963ad72641b17d3da3e0c173f, type: 3}
       propertyPath: m_LocalRotation.w
