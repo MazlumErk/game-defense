@@ -338,6 +338,7 @@ MonoBehaviour:
   zombie:
     speed: 0
     damage: 10
+    attackSpeed: 1
 --- !u!4 &633118197
 Transform:
   m_ObjectHideFlags: 0
@@ -879,6 +880,34 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 284db3a793d004a67acfeacae5a9626e, type: 3}
+--- !u!1 &1359015233 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5175203205842116605, guid: 45670e6b3cbb54949a8ba6366235d93f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1381681239}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1359015236
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359015233}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &1359087531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -973,7 +1002,7 @@ PrefabInstance:
     - target: {fileID: 615088887357265684, guid: 384899855a1b24d9b9a545c3d948502b,
         type: 3}
       propertyPath: startDelay
-      value: 9999999
+      value: 999999
       objectReference: {fileID: 0}
     - target: {fileID: 615088887357265684, guid: 384899855a1b24d9b9a545c3d948502b,
         type: 3}
@@ -1107,6 +1136,16 @@ PrefabInstance:
       propertyPath: rifle.data.fireRate
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 2399156969011176631, guid: 45670e6b3cbb54949a8ba6366235d93f,
+        type: 3}
+      propertyPath: m_Radius
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2399156969011176631, guid: 45670e6b3cbb54949a8ba6366235d93f,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 2688666117938469275, guid: 45670e6b3cbb54949a8ba6366235d93f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1166,7 +1205,11 @@ PrefabInstance:
     - {fileID: 6322870891573863510, guid: 45670e6b3cbb54949a8ba6366235d93f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5175203205842116605, guid: 45670e6b3cbb54949a8ba6366235d93f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1359015236}
   m_SourcePrefab: {fileID: 100100000, guid: 45670e6b3cbb54949a8ba6366235d93f, type: 3}
 --- !u!1001 &1418937109
 PrefabInstance:

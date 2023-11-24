@@ -9,6 +9,7 @@ public class DestroyObject : MonoBehaviour
     void Start()
     {
         StartCoroutine(DestroyAmmo());
+
     }
 
     // Update is called once per frame
@@ -18,11 +19,17 @@ public class DestroyObject : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
     }
 
     private IEnumerator DestroyAmmo()
     {
         yield return new WaitForSeconds(2);
         Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter(Collider collider)
+    {
+
     }
 }

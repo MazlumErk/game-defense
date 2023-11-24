@@ -17,7 +17,7 @@ public class RifleShotController : MonoBehaviour
 
 
 
-    
+
     private void Start()
     {
         currentRate = GetRifle().data.fireRate;

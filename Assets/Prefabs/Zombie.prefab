@@ -99,10 +99,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100144, guid: ce65fa103f0e84b4289374b2a4bf93f8,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5902262878596669518}
-    - targetCorrespondingSourceObject: {fileID: 100144, guid: ce65fa103f0e84b4289374b2a4bf93f8,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5923365973561709509}
     - targetCorrespondingSourceObject: {fileID: 100144, guid: ce65fa103f0e84b4289374b2a4bf93f8,
         type: 3}
@@ -111,7 +107,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100144, guid: ce65fa103f0e84b4289374b2a4bf93f8,
         type: 3}
       insertIndex: -1
+      addedObject: {fileID: 5902262878596669518}
+    - targetCorrespondingSourceObject: {fileID: 100144, guid: ce65fa103f0e84b4289374b2a4bf93f8,
+        type: 3}
+      insertIndex: -1
       addedObject: {fileID: 8289976458497778108}
+    - targetCorrespondingSourceObject: {fileID: 100144, guid: ce65fa103f0e84b4289374b2a4bf93f8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 259909763281168913}
   m_SourcePrefab: {fileID: 100100000, guid: ce65fa103f0e84b4289374b2a4bf93f8, type: 3}
 --- !u!1 &248008206104364349 stripped
 GameObject:
@@ -119,20 +123,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 248008206104265229}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5902262878596669518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 248008206104364349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e83da79899eb4bb3b2e4fd32d7366e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zombie: {fileID: 5923365973561709509}
-  playerPosition: {x: 0, y: 0, z: 0}
 --- !u!195 &5923365973561709509
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -178,6 +168,20 @@ CapsuleCollider:
   m_Height: 3.369307
   m_Direction: 1
   m_Center: {x: -0.067309976, y: 1.7500563, z: 0.35674286}
+--- !u!114 &5902262878596669518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248008206104364349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e83da79899eb4bb3b2e4fd32d7366e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zombie: {fileID: 5923365973561709509}
+  playerPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &8289976458497778108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,3 +194,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc02cfe39e09b4e6684817eb9f58380c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerLocation: {fileID: 0}
+  playerNavMesh: {fileID: 5923365973561709509}
+  currentAttackSpeed: 0
+--- !u!114 &259909763281168913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248008206104364349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d663fa5c0d654324a36e76428b91ce3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack: {fileID: 0}
+  run: {fileID: 0}
