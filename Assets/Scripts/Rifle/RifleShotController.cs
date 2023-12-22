@@ -13,7 +13,7 @@ public class RifleShotController : MonoBehaviour
     [SerializeField] private AudioSource rifleShoutSound;
     [SerializeField] private float currentRate;
     // Silah particle
-    [SerializeField] private ParticleSystem rifleParticle;
+    // [SerializeField] private ParticleSystem rifleParticle;
 
 
 
@@ -56,7 +56,7 @@ public class RifleShotController : MonoBehaviour
                         Destroy(hitInfo.collider.gameObject);
                     }
                     rifleShoutSound.Play();
-                    rifleParticle.Play();
+                    // rifleParticle.Play();
                     SetRifleData(GetRifle().data.ammo - 1);
                 }
                 currentRate = 0;

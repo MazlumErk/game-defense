@@ -10,17 +10,20 @@ public class ZombieAttackController : MonoBehaviour
     [SerializeField] private GameObject playerLocation;
     [SerializeField] private NavMeshAgent playerNavMesh;
     [SerializeField] private float currentAttackSpeed;
+    [SerializeField] private ZombieAnimationController zombieAnimationController;
     private void Awake()
     {
         Instance = this;
         playerLocation = FindObjectOfType<RifleShotController>().gameObject;
+        zombieAnimationController = gameObject.GetComponent<ZombieAnimationController>();
         currentAttackSpeed = 0.0f;
     }
     private void Update()
     {
         if (Vector3.Distance(transform.position, playerLocation.transform.position) < playerNavMesh.stoppingDistance)
         {
-            ZombieAnimationController.Instance.AttackAnimation();
+            // ZombieAnimationController.Instance.AttackAnimation();
+            zombieAnimationController.AttackAnimation();
             currentAttackSpeed += Time.deltaTime;
             if (currentAttackSpeed >= GetZombie().attackSpeed)
             {
